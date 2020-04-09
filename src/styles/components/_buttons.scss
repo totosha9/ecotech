@@ -1,0 +1,19 @@
+.button {
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: $colorA;
+  line-height: 50px;
+  padding: 0 25px;
+  color: #fff;
+  transition: $trs1;
+  &.touch,
+  &.hover {
+    background-color: $colorA2;
+  }
+  &.mousedown {
+    transform: scale(0.95);
+  }
+}

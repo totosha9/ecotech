@@ -1,0 +1,17 @@
+section.section.about#about
+  .container
+    h4.section__title Мы ремонтируем:
+    .row.mb--20
+      mixin block(title, href)
+        .about-block.col-xl-2.col-md-3.col-sm-4.col-6.mb-20
+          .about-block__container.js-touch-hover
+            svg.icon
+              use(xlink:href=href)
+            .about-block__content
+              h6.about-block__title=title
+      +block('Гироскутеры', 'img/svg/sprite.svg#giro')
+      +block('Электро-самокаты', 'img/svg/sprite.svg#samokat')
+      +block('Моноколеса', 'img/svg/sprite.svg#mono')
+      +block('Сигвеи', 'img/svg/sprite.svg#sigway')
+      +block('Электро-велосипеды', 'img/svg/sprite.svg#velo')
+      +block('Детские электро-автомобили', 'img/svg/sprite.svg#car')

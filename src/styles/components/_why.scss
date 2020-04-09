@@ -1,0 +1,25 @@
+.why {
+  color: #fff;
+  margin-bottom: 30px;
+  background-color: $colorB;
+  .section__title {
+    color: inherit;
+  }
+  &__content {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  &-block {
+    display: flex;
+    &__num {
+      font-size: 110px;
+      width: 110px;
+      text-align: center;
+      line-height: 0.85;
+      flex-shrink: 0;
+    }
+    &__title {
+      color: #fff;
+    }
+  }
+}

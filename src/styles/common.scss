@@ -1,0 +1,88 @@
+/* ========== normalize ========== */
+@import "../../node_modules/normalize.css/normalize";
+/* ========== fonts ========== */
+@import "./components/fonts";
+
+
+$trs1: .25s ease-out;
+$trs2: .5s ease-out;
+$trs3: 1s ease-in-out;
+
+$colorA: #0D871D;
+$colorA2:#0a7018;
+$colorB: #0c0c0c;
+
+
+/*========== Basic ==========*/
+html {
+  font-size: 16px;
+}
+body {
+  line-height: 1.7;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  min-width: 320px;
+  font-weight: 400;
+  color: #000;
+}
+* {
+  box-sizing: border-box;
+  &:before,&:after {
+    box-sizing: border-box;
+  }
+}
+a, button, label, input, textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  display: block;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  appearance: none;
+  padding: 0;
+  border-radius: 0;
+}
+a, button, label {
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+
+/*========== Grid ==========*/
+@import "./components/grid";
+
+/*========== Layout ==========*/
+@import "./components/layout";
+
+/*========== Typography ==========*/
+@import "./components/typography";
+
+/*========== Helpers ==========*/
+@import 'components/helpers';
+
+/*========== Buttons ==========*/
+@import 'components/buttons';
+
+/*========== Blocks ==========*/
+@import 'components/blocks';
+
+/*========== Home ==========*/
+@import 'components/home';
+
+/*========== Header ==========*/
+@import 'components/header';
+
+/*========== About ==========*/
+@import 'components/about';
+
+/*========== Why ==========*/
+@import 'components/why';
+
+/*========== Contacts ==========*/
+@import 'components/contacts';
+
+/*========== Services ==========*/
+@import 'components/services';
+
+/*========== Footer ==========*/
+@import 'components/footer';

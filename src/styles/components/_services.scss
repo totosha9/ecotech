@@ -1,0 +1,72 @@
+.services {
+  margin-bottom: 30px;
+  &-block {
+    border: 1px solid #DFDFDF;
+    position: relative;
+    transition: $trs1;
+    &.touch,
+    &.hover,
+    &.active {
+      border-color: $colorA;
+      .icon {
+        fill: $colorA;
+      }
+      .services-block__title {
+        color: $colorA;
+      }
+    }
+    &.active {
+      .icon {
+        transform: translateY(-50%) rotate(180deg) !important;
+      }
+    }
+    &__head {
+      text-decoration: none;
+      color: inherit;
+      padding: 15px 45px 15px 20px;
+      position: relative;
+      &.touch,
+      &.hover {
+        .icon {
+          fill: $colorA;
+          transform: translateY(-50%) rotate(90deg);
+        }
+        .services-block__title {
+          color: $colorA;
+        }
+      }
+    }
+    &__title {
+      margin: 0;
+      transition: $trs1;
+    }
+    &__content {
+      padding: 0 20px 20px 20px;
+      display: none;
+    }
+    .icon {
+      position: absolute;
+      fill: #7A7A7A;
+      width: 14px;
+      height: 14px;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: $trs1;
+    }
+    &.touch,
+    &.hover,
+    &.active {
+      border-color: $colorA;
+      .icon {
+        fill: $colorA;
+      }
+      .services-block__title {
+        color: $colorA;
+      }
+    }
+    &.active {
+      
+    }
+  }
+}

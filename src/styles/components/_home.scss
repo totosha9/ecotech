@@ -1,0 +1,36 @@
+.home {
+  background-color: $colorB;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 0;
+  &__container {
+    height:100vh;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__title {
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+}
+
+@media all and(max-width: 1024px) {
+  .home {
+    .background {
+      background-position: 70% 50%;
+    }
+  }
+}
+@media all and(max-width: 576px) {
+  .home {
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}
