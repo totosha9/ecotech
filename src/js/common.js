@@ -222,21 +222,25 @@ function parallax() {
 }
 
 function services() {
-  let $block = $('.services-block'),
+  let $toggle = $('.services-block__head'),
       $parralax,
       $interval;
 
-  $block.on('click', function() {
-    $(this).toggleClass('active');
-    $(this).find('.services-block__content').slideToggle(250);
+  $toggle.on('click', function() {
+    let $block = $(this).parent();
+    $block.toggleClass('active');
+    $block.find('.services-block__content').slideToggle(250);
+    
+    if(device.desktop()) {
+      clearInterval($parralax);
+      clearTimeout($interval)
+      $parralax = setInterval(function() {
+        parallax()
+      }, 10)
+      $interval = setTimeout(function() {
+        clearInterval($parralax)
+      },250)
+    }
 
-    clearInterval($parralax);
-    clearTimeout($interval)
-    $parralax = setInterval(function() {
-      parallax()
-    }, 10)
-    $interval = setTimeout(function() {
-      clearInterval($parralax)
-    },250)
   })
 }

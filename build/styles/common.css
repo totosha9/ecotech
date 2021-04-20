@@ -966,7 +966,8 @@ h6 {
 
 p {
   margin: 0 0 1rem 0;
-  font-weight: 200; }
+  font-weight: 400;
+  color: #494949; }
   p:last-child {
     margin: 0; }
 
@@ -1096,7 +1097,8 @@ b, strong {
   justify-content: center;
   align-items: center;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 .socials__item:not(:last-child) {
   margin-right: 20px; }
@@ -1359,6 +1361,9 @@ b, strong {
   color: #fff;
   margin-bottom: 30px;
   background-color: #0c0c0c; }
+  .why p {
+    color: inherit;
+    color: #dbdbdb; }
   .why .section__title {
     color: inherit; }
   .why__content {
@@ -1373,7 +1378,8 @@ b, strong {
       line-height: 0.85;
       flex-shrink: 0; }
     .why-block__title {
-      color: #fff; }
+      color: #fff;
+      font-weight: 500; }
 
 /*========== Contacts ==========*/
 .contacts {
@@ -1393,7 +1399,8 @@ b, strong {
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      border: 0; }
 
 @media all and (max-width: 768px) {
   .contacts__map {
@@ -1458,7 +1465,8 @@ b, strong {
   text-align: center;
   font-weight: normal; }
   .footer p {
-    font-weight: normal; }
+    font-weight: normal;
+    color: inherit; }
   .footer__container {
     display: flex;
     flex-direction: column;

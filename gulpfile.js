@@ -16,7 +16,8 @@ var gulp = require("gulp"),
     rsync = require('gulp-rsync'),
     imagemin = require('gulp-imagemin'),
     webpack = require('webpack'),
-    webpackStream = require('webpack-stream');
+    webpackStream = require('webpack-stream'),
+    ftp = require( 'vinyl-ftp' );
 
 let $img = ["./src/img/**/*.{jpg,jpeg,png,gif}", "!./src/img/favicons/*.{jpg,jpeg,png,gif}"],
     $pug = ["./src/views/**/*.pug", "!./src/views/blocks/*.pug", "!./src/views/layout/*.pug"],
@@ -190,24 +191,9 @@ gulp.task("watch", function () {
   });
 });
 
-gulp.task("transfer", function () {
-  return gulp.src('build')
-    .pipe(rsync({
-      root: 'build',
-      hostname: 't68069zl.beget.tech',
-      destination: '/home/t/t68069zl/t68069zl.beget.tech/public_html/',
-      username: 't68069zl',
-      recursive: true,
-      exclude: ['maps', '.DS_Store'],
-      shell: 'ftp'
-    }));
-});
-
 gulp.task("default", gulp.series("clean",
   gulp.parallel("pug", "styles", "scripts", "images", "favicons", "other"),
   gulp.parallel("watch", "serve")
 ));
-
-gulp.task("deploy", gulp.series("scripts-production","transfer"));
 
 

@@ -1,25 +1,44 @@
 doctype html
-html
+html(lang="ru")
   head
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-163777093-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-163777093-1');
     meta(charset="utf-8")
-    title Эко-Тех - Ремонт электротранспорта в Николаеве
+    title Эко-Тех - Ремонт, диагностика и подбор электротранспорта в Николаеве
+    meta(name='description', content='Ремонт и диагностика электросмокатов, гироскутеров, моноколес в Николаеве')
+    meta(name='keywords', content='Ремонт электрсоамоката, ремонт гироскутера, ремонт моноколеса, ремонт электровелосипеда, ремонт электротранспорта в Николаеве, электросамокат, гироскутер, моноколесо, электровелосипед')
+    meta(name='format-detection', content='telephone=no') 
     meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
-    link(rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon")
-    link(rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png")
-    link(rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png")
-    link(rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png")
-    link(rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png")
-    link(rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png")
-    link(rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png")
-    link(rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png")
-    link(rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png")
-    link(rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png")
-    link(rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png")
-    link(rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png")
-    link(rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png")
-    link(rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png")
-    link(rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png")
-    link(rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png")
+    link(rel="shortcut icon" href="https://eco-mk.tech/img/favicons/favicon.ico" type="image/x-icon")
+    link(rel="icon" sizes="16x16" href="https://eco-mk.tech/img/favicons/favicon-16x16.png" type="image/png")
+    link(rel="icon" sizes="32x32" href="https://eco-mk.tech/img/favicons/favicon-32x32.png" type="image/png")
+    link(rel="apple-touch-icon-precomposed" href="https://eco-mk.tech/img/favicons/apple-touch-icon-precomposed.png")
+    link(rel="apple-touch-icon" href="https://eco-mk.tech/img/favicons/apple-touch-icon.png")
+    link(rel="apple-touch-icon" sizes="57x57" href="https://eco-mk.tech/img/favicons/apple-touch-icon-57x57.png")
+    link(rel="apple-touch-icon" sizes="60x60" href="https://eco-mk.tech/img/favicons/apple-touch-icon-60x60.png")
+    link(rel="apple-touch-icon" sizes="72x72" href="https://eco-mk.tech/img/favicons/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon" sizes="76x76" href="https://eco-mk.tech/img/favicons/apple-touch-icon-76x76.png")
+    link(rel="apple-touch-icon" sizes="114x114" href="https://eco-mk.tech/img/favicons/apple-touch-icon-114x114.png")
+    link(rel="apple-touch-icon" sizes="120x120" href="https://eco-mk.tech/img/favicons/apple-touch-icon-120x120.png")
+    link(rel="apple-touch-icon" sizes="144x144" href="https://eco-mk.tech/img/favicons/apple-touch-icon-144x144.png")
+    link(rel="apple-touch-icon" sizes="152x152" href="https://eco-mk.tech/img/favicons/apple-touch-icon-152x152.png")
+    link(rel="apple-touch-icon" sizes="167x167" href="https://eco-mk.tech/img/favicons/apple-touch-icon-167x167.png")
+    link(rel="apple-touch-icon" sizes="180x180" href="https://eco-mk.tech/img/favicons/apple-touch-icon-180x180.png")
+    link(rel="apple-touch-icon" sizes="1024x1024" href="https://eco-mk.tech/img/favicons/apple-touch-icon-1024x1024.png")
+    //socials
+    meta(property='og:type', content='business.business')
+    meta(property='og:title', content='Эко-Тех')
+    meta(property='og:description', content='Ремонт и диагностика электросмокатов, гироскутеров, моноколес в Николаеве')
+    meta(property='og:url', content='https://eco-mk.tech/')
+    meta(property='og:image', content='https://eco-mk.tech/img/favicons/apple-touch-icon-1024x1024.png')
+    meta(property='business:contact_data:locality', content='Николаев')
+    meta(property='business:contact_data:country_name', content='Украина')
+
     //styles
     link(rel="stylesheet" href="styles/common.min.css")
   body

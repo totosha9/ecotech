@@ -2,6 +2,10 @@
   color: #fff;
   margin-bottom: 30px;
   background-color: $colorB;
+  p {
+    color: inherit;
+    color: #dbdbdb;
+  }
   .section__title {
     color: inherit;
   }
@@ -20,6 +24,7 @@
     }
     &__title {
       color: #fff;
+      font-weight: 500;
     }
   }
 }
