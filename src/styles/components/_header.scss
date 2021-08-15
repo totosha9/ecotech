@@ -29,7 +29,7 @@
     transform: translateY(100%);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     .logo {
-      fill: #000;
+      color: #000;
     }
   }
 }
@@ -188,7 +188,7 @@
         transform: translateY(0);
       }
       .logo {
-        fill: #fff;
+        color: #fff;
       }
       .nav-toggle {
         span:before {

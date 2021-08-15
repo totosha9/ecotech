@@ -73,11 +73,12 @@
 }
 
 .logo {
+  color: #fff;
   &__image {
     height: 40px;
     width: auto;
     display: block;
-    transition: fill $trs1;
+    transition: color $trs1;
   }
 }
 
